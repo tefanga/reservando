@@ -92,7 +92,7 @@ describe('Testing de obtenerRestaurantes()', function(){
 
 // se testea los requerimientos nuevos para reservado
 describe('Testing de reserva', function(){
-    it('Se prueba que un restaurante calcule correctamente su precio base',function() {
+    it('Se prueba que una reserva calcule correctamente su precio base',function() {
         // año 2018 mes 7= agosto dia 24 hora 11hs 00 minutos
         var reserva1 = new Reserva(new Date(2018, 7, 24, 11, 00), 8, 350, "DES1");
         var precioBase = reserva1.calculoPrecioBaseReserva();
@@ -100,7 +100,7 @@ describe('Testing de reserva', function(){
         expect(precioBase).to.eql(2800);
     });
 
-    it('Se prueba que un restaurante calcule correctamente su precio final',function() {
+    it('Se prueba que una reserva calcule correctamente su precio final',function() {
         // año 2018 mes 7= agosto dia 27 hora 15hs 40 minutos
         var reserva2 = new Reserva(new Date(2018, 7, 27, 14, 100), 2, 150, "DES200")
         var precioFinal = reserva2.calculoPrecioTotalReserva();
